@@ -1,0 +1,22 @@
+### Criar um Novo Pedido (Mapping Obrigatório)
+POST http://localhost:3000/order
+Content-Type: application/json
+
+{
+  "numeroPedido": "v10089015vdb-01",
+  "valorTotal": 10000,
+  "dataCriacao": "2023-07-19T12:24:11.529",
+  "items": [
+    {
+      "idItem": "2434",
+      "quantidadeltem": 1,
+      "valorltem": 1000
+    }
+  ]
+}
+
+### Buscar o Pedido Criado (Obrigatório)
+GET http://localhost:3000/order/v10089015vdb-01
+
+### Listar Todos os Pedidos (Opcional)
+GET http://localhost:3000/order/list
